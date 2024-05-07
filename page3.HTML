@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>SPORTS SHOSE-RED IN BLUE</title>
+  <link rel="icon" href="imeges/fit zone_logo..svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/Master.css">
+  <link rel="stylesheet" href="css/navstyle.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/cart.css">
+  <link rel="stylesheet" href="css/sport.css">
+  <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://kit.fontawesome.com/dbed6b6114.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <script src="js/Script.js" defer></script>
+  <script src="js/navscript.js" defer></script>
+  <script src="js/darkmode.js" defer></script>
+  <script src="js/main.js" defer></script>
+
+</head>
+
+<body>
+  <header>  <a href="index.html" class="logo"> </i> <span class="fit">Fit</span> <span>Zone</span></a>
+    <ul class="navbar" id="nav">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="shop.html"> Shop</a></li>
+        <li><a href="about.html"> About Us</a></li>
+        <li><a href="contact us.html">Contact Us</a></li>
+        <li><a href="#">
+                <button id="dark-mode" class="moon" alt="k"><i class='bx bxs-moon'></i></button>
+                <button id="light-mode" class="sun hide" alt="k"><i class='bx bxs-sun'></i></button>
+            </a></li>
+    </ul>
+    <div class="main">
+        <a href="login.html" class="user-login"><i class="fas fa-sign-in-alt"></i> login</a>
+        <a href="#" id="cart-icon"><i class="fas fa-shopping-cart"></i> cart</a>
+        <a href="javascript:void(0);" class="menu-icon" onclick="myFunction()" id="menu-icon">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      
+   
+    <div class="cart">
+      <button id="dark-mode" class="moon" alt="k"><i class=''></i></button>
+      <button id="light-mode" class="sun hide" alt="k"><i class=''></i></button>
+      <h2 class="cart-title">Your Cart</h2>
+
+      <!-- CONTENT  -->
+      <div class="cart-content">
+      </div>
+      <!-- TOTAL   -->
+      <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">$0</div>
+      </div>
+      <!-- BUY BUTTON  -->
+      <button type="button" class="btn-buy">Buy Now</button>
+      <!-- CART CLOSE  -->
+      <i class='bx bx-x' id="cart-close"></i>
+    </div>
+    </div>
+  </header>
+  <!-- you need to change only 5 elements every-time-->
+  <!-- images / product name / Rating / price / details paragraph-->
+  <div class="card-wrapper">
+    <div class="card">
+      <!-- card left -->
+      <div class="product-imgs">
+        <div class="img-display">
+          <div class="img-showcase"> <!-- Change big images from ... -->
+            <img src="shahd/images/All Product Images/4.png" alt="erorr"> <!--  here -->
+            <img src="shahd/images/All Product Images/42.png" alt="erorr"> <!--  here -->
+            <img src="shahd/images/All Product Images/43.png" alt="erorr"> <!--  here -->
+            <img src="shahd/images/All Product Images/44.png" alt="erorr"> <!--  here -->
+          </div>
+        </div>
+        <div class="img-select">
+          <div class="img-item">
+            <a href="#" data-id="1"> <!-- Change small images from ... -->
+              <img src="shahd/images/All Product Images/4.png" alt="erorr"> <!--  here -->
+            </a>
+          </div>
+          <div class="img-item">
+            <a href="#" data-id="2">
+              <img src="shahd/images/All Product Images/42.png" alt="erorr"> <!--  here -->
+            </a>
+          </div>
+          <div class="img-item">
+            <a href="#" data-id="3">
+              <img src="shahd/images/All Product Images/43.png" alt="erorr"> <!-- here -->
+            </a>
+          </div>
+          <div class="img-item">
+            <a href="#" data-id="4">
+              <img src="shahd/images/All Product Images/44.png" alt="erorr"> <!-- here -->
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- card right -->
+      <div class="product-content">
+        <h2 class="product-title">TRAINING SITE FOR MENS-BLACK</h2> <!-- Change product name here -->
+        <a href="shop.html" class="product-link">Back to Shop!</a>
+        <div class="product-rating">
+          <i class="fas fa-star"></i> <!-- Change Rating stars from here -->
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <span>4.2(79)</span> <!--// //////////////////// --> <!-- Change Rating value here -->
+        </div>
+
+        <div class="product-price">
+          <p class="last-price">Old Price: <span>$450.00</span></p> <!-- Change last Price here -->
+          <p class="new-price">New Price: <span>$400.00</span></p> <!-- Change new here -->
+        </div>
+
+        <div class="product-detail">
+          <h2>about this item: </h2>
+          <p></p>
+          <p>Our designers developed this traning site for men running in windy conditions, that also has good
+            breathability.</p> <!-- two <P></p> for details, change them ... -->
+          <!--  -->
+        </div>
+
+        <div class="purchase-info">
+
+          <button type="button" class="btn">
+            <a href="
+            shop.html #3 " class="links">Add to Cart</a>
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+          <button type="button" class="btn" onclick="toggleLike()">
+            <span>
+              <svg id="likeIcon" class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                height="24" fill="currentColor" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z" />
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div class="social-links">
+          <p>Share At: </p>
+          <a href="https://www.facebook.com/" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com/" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://web.whatsapp.com/" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="https://www.pinterest.com/" target="_blank">
+            <i class="fab fa-pinterest"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="holder">
+      <div class="content-footer">
+        <div class="profile">
+          <div class="logo-area">
+            <img src="media/Screenshot 2024-04-30 014319.png" alt="">
+            <br>
+            <button id="dark-mode" class="moon" alt="k"><i class='l'></i></button>
+            <button id="light-mode" class="sun hide" alt="k"><i class=''></i></button>
+          </div>
+          <div class="desc-area">
+            <p><a>is your destination for Quality product and exceptional shopping experiences</a></p>
+          </div>
+          <div class="social-media">
+            <a href="https://www.linkedin.com/login/ar" Target="_blank" ><i class='bx bxl-linkedin-square'></i></a>
+            <a href="https://www.facebook.com/?locale=ar_AR"  Target="_blank"><i class='bx bxl-facebook-square'></i></a>
+            <a href="https://www.instagram.com/" Target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="https://twitter.com/?lang=ar" Target="_blank"><i class='fab fa-x-twitter'></i></a>
+        </div>
+        </div>
+        <div class="service-area">
+          <ul class="service-header">
+            <li class="service-name"><b>contact us..</b></li>
+            <li><a href="https://maps.app.goo.gl/jaa2vx5AufgN2QCu9">Addres:562 Wellington Road Street</a>
+            </li>
+            <li><a>Phone:(+91)01 2345 6789</a></li>
+            <li><a>Hours:10:00-18:00 .Mon-Sat.</a></li>
+          </ul>
+          <ul class="service-header">
+            <li class="service-name"><b>Account</b> </li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html"> About Us</a></li>
+            <li><a href="contact us.html">Contact Us</a></li>
+          </ul>
+          <ul class="service-header">
+            <li class="service-name"><b>About</b></li>
+            <li><a href="privacy.html">Terms & conditions</a></li>
+          </ul>
+          <ul class="service-header">
+            <li class="service-name">install our APP..</li>
+            <li><a href="https://play.google.com/store/apps/details?id=com.trainerize.fitzone247&pcampaignid=web_share"
+                target="-blank"><img src="imeges/Google Play@2x.webp" class="APP google" alt="google"></a></li>
+            <li><a href="https://apps.apple.com/us/app/fitzone-24-7/id1565444185" target="-blank"><img
+                  src="imeges/app-store_badge copy 2@1x.webp" class="APP apple" alt="apple"></a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-bottom">
+        <span><a> FITZONE ©2024 - All Rights Reserved</a></span>
+      </div>
+    </div>
+    </div>
+
+  </footer>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitZone/Shop</title>
+    <link rel="icon" href="imeges/fit zone_logo..svg">
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/dbed6b6114.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/navstyle.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/feedback_style.css">
+    <link rel="stylesheet " href="css/sport.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/swiper-bundle.min.js" defer></script>
+    <script src="js/darkmode.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/navscript.js" defer></script>
+    <script src="js/cart.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+ 
+        <a href="index.html" class="logo"> </i> <span class="fit">Fit</span> <span>Zone</span></a>
+        <ul class="navbar" id="nav">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="shop.html"> Shop</a></li>
+            <li><a href="about.html"> About Us</a></li>
+            <li><a href="contact us.html">Contact Us</a></li>
+            <li><a href="#">
+                    <button id="dark-mode" class="moon" alt="k"><i class='bx bxs-moon'></i></button>
+                    <button id="light-mode" class="sun hide" alt="k"><i class='bx bxs-sun'></i></button>
+                </a></li>
+        </ul>
+        <div class="main">
+            <a href="login.html" class="user-login"><i class="fas fa-sign-in-alt"></i> login</a>
+            <a href="#" id="cart-icon"><i class="fas fa-shopping-cart"></i> cart</a>
+            <a href="javascript:void(0);" class="menu-icon" onclick="myFunction()" id="menu-icon">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+ 
+        <div class="cart">
+            <!-- CONTENT  -->
+            <div class="cart-content">
+            </div>
+            <!-- TOTAL   -->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">$0</div>
+            </div>
+            <!-- BUY BUTTON  -->
+            <button type="button" class="btn-buy">Buy Now</button>
+            <!-- CART CLOSE  -->
+            <i class='bx bx-x' id="cart-close"></i>
+        </div>
+        </div>
+    </header>
+    <br>
+    <div class="adver">
+
+        <div class="ad-container">
+          <div class="ad-first">
+              <img src="imeges/pexels-roseleon-3225889.jpg" class="ad-img" alt="">
+              <div class="ad-overlay">
+                <h1 class="ad-h1">pretty</h1>
+                <h2 class="ad-h2">Elevate your performance with our pretty sports gear, where style meets strength on the field</h2>
+                <br>
+                <a href="shop.html" class="ad-btn">Shop Now</a>
+              </div>
+          </div>
+      </div>
+    
+      <div class="ad-container">
+        <div class="ad-second">
+            <img src="imeges/m2.jpg" class="ad-img" alt="">
+            <div class="ad-overlay">
+              <h1 class="ad-h1">Sale 50%</h1>
+              <h2 class="ad-h2">All Sports Products! Hurry, Limited Time Offer. Dive into our website now and gear up for your next adventure! Don't miss out on this unbeatable deal!</h2>
+              <br>
+              <a href="shop.html" class="ad-btn">Shop Now</a>
+            </div>
+        </div>
+      </div>
+    
+      <div class="ad-container">
+        <div class="ad-third">
+            <img src="imeges/pexels-jaime-reimer-1376930-2749500.jpg" class="ad-img" alt="">
+            <div class="ad-overlay">
+              <h1 class="ad-h1">summer sale </h1>
+              <h2 class="ad-h2">
+                Dive into our website now and get ready for your summer adventures! Don't miss out on this unbeatable deal!
+              </h2>
+              <br>
+              <a href="shop.html" class="ad-btn">Shop Now</a>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+    
+
+
+
+    <section class=" shop-container">
+        <div class="shop-content">
+            <!-- BOX 1 -->
+
+            <div class="product-box">
+                <a href="page1.html"  id="1">
+                    <img src="imeges/shoe-3.png" alt="" class="product-img">
+                </a>
+                <h2 class="product-title">sports shose-red in blue</h2>
+                <span class="product-price">$200.00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- BOX 2-->
+
+            <div class="product-box">
+                <a href="page2.HTML"  id="2">
+                    <img src="imeges/shoe-1.png" alt="" class="product-img">
+                </a>
+                <h2 class="product-title">sports shose-blue and white</h2>
+                <span class="product-price">$150.00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- BOX 3-->
+
+            <div class="product-box">
+                <a href="page3.HTML" id="3">
+                    <img src="imeges\4.png" alt="" class="product-img">
+                </a>
+                <h2 class="product-title">training site for mens-black</h2>
+                <span class="product-price">$400.00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+
+            </div>
+
+            <!-- BOX 4-->
+
+            <div class="product-box">
+                <a href="page4.html"  id="4">
+                    <img src="imeges/5.png" alt="" class="product-img">
+                </a>
+                <h2 class="product-title">Training bag -minte green</h2>
+                <span class="product-price">$350.00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+
+            </div>
+
+            <!-- BOX 5-->
+
+            <div class="product-box">
+                <a href="page5.html"  id="5">
+                    <img src="imeges/2.png" alt="" class="product-img">
+                </a>
+                <h2 class="product-title">training wheel</h2>
+                <span class="product-price">$80.00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- BOX 6-->
+
+            <div class="product-box">
+                <a href="page6.html"  id="6">
+                    <img src="imeges/sports-boot-unique-design-orange-and-blue-color-sc-unique-orange-and-blue-leather-shoe-design.png"
+                        alt="" class="product-img">
+                </a>
+                <h2 class="product-title">SportBboot unique design-orange and blue</h2>
+                <span class="product-price">$380.00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+
+
+
+            <div class="product-box">
+
+                <a href="page12.html"  id="7">
+                    <img src="imeges/sports-white-sneakers.svg" alt="" class="product-img">
+                </a>
+                <h2 class="product-title">white-sneaker</h2>
+                <span class="product-price">$140.00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- BOX 8 -->
+
+            <div class="product-box">
+                <a href="page11.html"  id="8"> <!-- ID -->
+                    <img src="imeges/lefter.svg" alt="" class="product-img">
+                </a>
+                <h2 class="product-title">lefter</h2>
+                <span class="product-price">$140.5</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- BOX 9-->
+
+            <div class="product-box">
+                <a href="page10.html "  id="9">
+                    <img src="imeges/9.png" alt="" class="product-img">
+                </a>
+                <h2 class="product-title">sports shose-blue</h2>
+                <span class="product-price">$140</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- BOX 10 -->
+
+            <div class="product-box">
+                <a href="page9.html" id="10">
+                    <img src="imeges/workout-kettlebell-weightlifting-kettlebell-metal.png" alt="" class="product-img">
+                </a>
+                <h2 class="product-title">workout-kettlebell-weightlifting-metal</h2>
+                <span class="product-price">$90.00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- BOX 11 -->
+
+            <div class="product-box">
+                <a href="page8.html" id="11">
+                    <img src="imeges/woman-fitness-suit-mockup-3d-woman-fitness-suit-mockup-female-gym-sport-suit-mockup 1.svg"
+                        alt="" class="product-img">
+                </a>
+                <h2 class="product-title">woman-fitness-suit</h2>
+                <span class="product-price">$300.00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- BOX 12 -->
+
+            <div class="product-box ">
+                <a href="page7.html"  id="12">
+                    <img src="imeges/dumple.svg" alt="" class="product-img">
+                </a>
+                <h2 class="product-title">dumpls for trainin</h2>
+                <span class="product-price">$70.00</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="holder">
+            <div class="content-footer">
+                <div class="profile">
+                    <div class="logo-area">
+                        <img src="media/Screenshot 2024-04-30 014319.png" alt="">
+                        <br>
+                        <button id="dark-mode" class="moon" alt="k"><i class='l'></i></button>
+                        <button id="light-mode" class="sun hide" alt="k"><i class=''></i></button>
+                    </div>
+                    <div class="desc-area">
+                        <p><a>is your destination for Quality product and exceptional shopping experiences</a></p>
+                    </div>
+                    <div class="social-media">
+                        <a href="https://www.linkedin.com/login/ar" Target="_blank" ><i class='bx bxl-linkedin-square'></i></a>
+                        <a href="https://www.facebook.com/?locale=ar_AR"  Target="_blank"><i class='bx bxl-facebook-square'></i></a>
+                        <a href="https://www.instagram.com/" Target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                        <a href="https://twitter.com/?lang=ar" Target="_blank"><i class='fab fa-x-twitter'></i></a>
+                    </div>
+                </div>
+                <div class="service-area">
+                    <ul class="service-header">
+                        <li class="service-name"><b>contact us..</b></li>
+                        <li><a href="https://maps.app.goo.gl/jaa2vx5AufgN2QCu9">Addres:562 Wellington Road Street</a>
+                        </li>
+                        <li><a>Phone:(+91)01 2345 6789</a></li>
+                        <li><a>Hours:10:00-18:00 .Mon-Sat.</a></li>
+                    </ul>
+                    <ul class="service-header">
+                        <li class="service-name"><b>Account</b> </li>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html"> About Us</a></li>
+                        <li><a href="contact us.html">Contact Us</a></li>
+                    </ul>
+                    <ul class="service-header">
+                        <li class="service-name"><b>About</b></li>
+                        <li><a href="privacy.html">Terms & conditions</a></li>
+                    </ul>
+                    <ul class="service-header">
+                        <li class="service-name">install our APP..</li>
+                        <li><a href="https://play.google.com/store/apps/details?id=com.trainerize.fitzone247&pcampaignid=web_share"
+                                target="-blank"><img src="imeges/Google Play@2x.webp" class="APP google"
+                                    alt="google"></a></li>
+                        <li><a href="https://apps.apple.com/us/app/fitzone-24-7/id1565444185" target="-blank"><img
+                                    src="imeges/app-store_badge copy 2@1x.webp" class="APP apple" alt="apple"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <span><a> FITZONE ©2024 - All Rights Reserved</a></span>
+            </div>
+        </div>
+        </div>
+
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const cartIcon = document.getElementById("cart-icon");
+            const cart = document.querySelector(".cart");
+            const cartClose = document.getElementById("cart-close");
+    
+            // Toggle cart visibility when clicking cart icon
+            cartIcon.addEventListener("click", function(event) {
+                event.preventDefault(); // Prevent the default behavior of the anchor tag
+                cart.classList.toggle("show");
+            });
+    
+            // Close cart when clicking on close icon
+            cartClose.addEventListener("click", function() {
+                cart.classList.remove("show");
+            });
+    
+            // Close cart when clicking outside of it
+            window.addEventListener("click", function(event) {
+                if (!event.target.matches("#cart-icon") && !event.target.closest(".cart")) {
+                    cart.classList.remove("show");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

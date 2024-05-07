@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact us</title>
+  <link rel="icon" href="imeges/fit zone_logo..svg">
+  <link rel="stylesheet" href="css/navstyle.css">
+  <link rel="stylesheet" href="css/abdo.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet " href="css/sport.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/contact.css">
+
+  <script src="js/sport.js" defer></script>
+  <script src="js/navscript.js" defer></script>
+  <script src="js/swiper-bundle.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/darkmode.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    
+    <a href="index.html" class="logo"> </i> <span class="fit">Fit</span> <span>Zone</span></a>
+    <ul class="navbar" id="nav">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="shop.html"> Shop</a></li>
+        <li><a href="about.html"> About Us</a></li>
+        <li><a href="contact us.html">Contact Us</a></li>
+        <li><a href="#">
+                <button id="dark-mode" class="moon" alt="k"><i class='bx bxs-moon'></i></button>
+                <button id="light-mode" class="sun hide" alt="k"><i class='bx bxs-sun'></i></button>
+            </a></li>
+    </ul>
+    <div class="main">
+        <a href="login.html" class="user-login"><i class="fas fa-sign-in-alt"></i> login</a>
+        <a href="#" id="cart-icon"><i class="fas fa-shopping-cart"></i> cart</a>
+        <a href="javascript:void(0);" class="menu-icon" onclick="myFunction()" id="menu-icon">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      
+   
+    <div class="cart">
+      <h2 class="cart-title">Your Cart</h2>
+
+      <!-- CONTENT  -->
+      <div class="cart-content">
+      </div>
+      <!-- TOTAL   -->
+      <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">$0</div>
+      </div>
+      <!-- BUY BUTTON  -->
+      <button type="button" class="btn-buy">Buy Now</button>
+      <!-- CART CLOSE  -->
+      <i class='bx bx-x' id="cart-close"></i>
+    </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="form">
+      <div class="contact-info">
+        <h3 class="title">Let's get in touch</h3>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+          dolorum adipisci recusandae praesentium dicta!
+        </p>
+
+        <div class="info">
+          <div class="information">
+            <img src="img/location.png" class="icon" alt="" />
+            <p>562 Wellington Road Street</p>
+          </div>
+          <div class="information">
+            <img src="img/email.png" class="icon" alt="" />
+            <p>FitZone@gmail.com</p>
+          </div>
+          <div class="information">
+            <img src="img/phone.png" class="icon" alt="" />
+            <p>(+91)01 2345 6789</p>
+          </div>
+        </div>
+
+        <div class="social-media">
+          <p>Connect with us :</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com/">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href=" https://www.linkedin.com/in/shahd-elghomary-305201252/">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <span class="circle one"></span>
+        <span class="circle two"></span>
+        <form action="index.html" autocomplete="off">
+          <h3 class="title">Contact us</h3>
+          <div class="input-container">
+            <input type="text" name="name" class="input" />
+            <label for="">Username</label>
+            <span>Username</span>
+          </div>
+          <div class="input-container">
+            <input type="email" name="email" class="input" />
+            <label for="">Email</label>
+            <span>Email</span>
+          </div>
+          <div class="input-container">
+            <input type="tel" name="phone" class="input" />
+            <label for="">Phone</label>
+            <span>Phone</span>
+          </div>
+          <div class="input-container textarea">
+            <textarea name="message" class="input"></textarea>
+            <label for="">Message</label>
+            <span>Message</span>
+          </div>
+          <button type="submit" class="btn" onclick="openPopup()">Send</button>
+      </div>
+      </form>
+      <div class="popup" id="popup">
+        <h2>Thank you for using FITZONE</h2>
+        <p>Every thing is done,
+          See you soon..</p>
+        <button type="button" onclick="closePopup()">OK</button>
+      </div>
+    </div>
+    <script>
+      let popup = document.getElementById("popup");
+      function openPopup() {
+        popup.classList.add("open-popup");
+      }
+      function closePopup() {
+        popup.classList.remove("open-popup");
+      }
+    </script>
+  </div>
+</body>
+<footer>
+  <div class="holder">
+    <div class="content-footer">
+      <div class="profile">
+        <div class="logo-area">
+          <img src="media/Screenshot 2024-04-30 014319.png" alt="">
+          <br>
+          <button id="dark-mode" class="moon" alt="k"><i class='l'></i></button>
+          <button id="light-mode" class="sun hide" alt="k"><i class=''></i></button>
+        </div>
+        <div class="desc-area">
+          <p><a>is your destination for Quality product and exceptional shopping experiences</a></p>
+        </div>
+        <div class="social-media">
+          <a href="https://www.linkedin.com/login/ar" Target="_blank" ><i class='bx bxl-linkedin-square'></i></a>
+          <a href="https://www.facebook.com/?locale=ar_AR"  Target="_blank"><i class='bx bxl-facebook-square'></i></a>
+          <a href="https://www.instagram.com/" Target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+          <a href="https://twitter.com/?lang=ar" Target="_blank"><i class='fab fa-x-twitter'></i></a>
+      </div>
+      </div>
+      <div class="service-area">
+        <ul class="service-header">
+          <li class="service-name"><b>contact us..</b></li>
+          <li><a href="https://maps.app.goo.gl/jaa2vx5AufgN2QCu9">Addres:562 Wellington Road Street</a>
+          </li>
+          <li><a>Phone:(+91)01 2345 6789</a></li>
+          <li><a>Hours:10:00-18:00 .Mon-Sat.</a></li>
+        </ul>
+        <ul class="service-header">
+          <li class="service-name"><b>Account</b> </li>
+          <li><a href="sport.html">HOME</a></li>
+          <li><a href="index.html">Shop</a></li>
+          <li><a href="about.html"> About Us</a></li>
+          <li><a href="contact us.html">Contact Us</a></li>
+        </ul>
+        <ul class="service-header">
+          <li class="service-name"><b>About</b></li>
+          <li><a href="terms.html">Terms & conditions</a></li>
+        </ul>
+        <ul class="service-header">
+          <li class="service-name">install our APP..</li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.trainerize.fitzone247&pcampaignid=web_share"
+              target="-blank"><img src="imeges/Google Play@2x.webp" class="APP google" alt="google"></a></li>
+          <li><a href="https://apps.apple.com/us/app/fitzone-24-7/id1565444185" target="-blank"><img
+                src="imeges/app-store_badge copy 2@1x.webp" class="APP apple" alt="apple"></a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="footer-bottom">
+      <span><a> FITZONE ©2024 - All Rights Reserved</a></span>
+    </div>
+  </div>
+  </div>
+</footer>
+<script src="js/contact.js"></script>
+</body>
+
+</html>

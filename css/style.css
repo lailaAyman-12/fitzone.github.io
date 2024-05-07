@@ -1,0 +1,270 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900,300);
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+
+:root {
+    --white-light: rgba(255, 255, 255, 0.5);
+    --alice-blue: #f8f9fa;
+    --carribean-green: #01aba2;
+    --gray: #ededed;
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --main-color: #051223;
+    --sec-color: #01aba2;
+    --text-color: #fff;
+    --bg-color: #fff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.dark-mode {
+    --primary-color: #fff;
+    --secondary-color: #000;
+    
+}
+#dark-mode {
+    color: #000;
+  }
+.show {
+    display: inline;
+}
+
+.hide {
+    display: none;
+}
+
+
+body {
+    background-color: var(--parg-color);
+    background: linear-gradient(to right, var(--secondary-color), var(--secondary-color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    box-shadow: 2px 25px 20px var(--primary-color);
+    position: relative;
+    padding: 40px;
+    overflow: hidden;
+    width: 800px;
+    max-width: 100%;
+    min-height: 550px;
+    margin-top: 150px;
+}
+
+.container form label {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+}
+
+.container .social-links i {
+    color: var(--border-color);
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: 2px solid var(--parg-color);
+    margin: 0 15px;
+    transition: 0.5s;
+    margin-top: 10px;
+
+}
+
+.container .social-links i:hover {
+    color: var(--secondary-color);
+    font-size: 15px;
+    background: var(--border-color);
+
+}
+
+.container button {
+    background-color: var(--border-color);
+    color: var(--secondary-color);
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    margin: 9px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container form {
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+}
+
+.container .form form {
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+}
+.container .form form .inputs{
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.container form .inputs{
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.container .check .privacy {
+    text-decoration: underline;
+}
+
+.container .inputs {
+    background-color: var(--parg-color);
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 15px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+
+}
+
+form {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+    margin: auto;
+}
+
+/* مش راضية تشتغل */
+.container .check .checkbox {
+    background: var(--border-color);
+    color: #fff;
+}
+
+.login a {
+    background-color: #01aba2;
+    color: var(--secondary-color);
+    font-size: 12px;
+    padding: 10px 15px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    margin: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 5px;
+
+}
+
+.container h1 {
+    margin-bottom: 15px;
+    margin-top: -10px;
+    color: var(--primary-color);
+}
+
+.login a:hover,
+.container button:hover {
+    color: #fff;
+    background: #051223;
+}
+
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.input-icons i {
+    position: absolute;
+}
+
+.icon {
+    padding: 10px;
+    color: green;
+    min-width: 50px;
+    text-align: center;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+/*  لون الكتابه مش عارفه اغير فى انهى واحده  */
+
+.container .side_img img {
+    width: 45%;
+    height: 100%;
+    margin-left: 400px;
+    margin-top: 20px;
+    border: 3px solid var(--white-color);
+    border-radius: 5%;
+    transition: 0.2s;
+
+}
+
+.container .the_side_img img {
+    width: 45%;
+    height: 100%;
+    margin-left: 400px;
+    margin-top: 60px;
+    border: 3px solid var(--white-color);
+    border-radius: 5%;
+    transition: 0.2s;
+
+}
+
+@media(max-width : 800px) {
+    .container .the_side_img img {
+        display: none;
+    }
+
+    .container .side_img img {
+        display: none;
+    }
+
+    .container form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 20px;
+        padding: 0 40px;
+    }
+
+    .container .form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 20px;
+        padding: 0 40px;
+    }
+}

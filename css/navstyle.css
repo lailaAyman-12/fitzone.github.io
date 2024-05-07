@@ -1,0 +1,236 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900,300);
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --main-color: #03cca2;
+  --border-color: #01aba2;
+  --primary-color: #fff;
+  --secondary-color: #000;
+}
+
+.dark-mode {
+  --primary-color: #000;
+  --secondary-color: #fff;
+}
+
+.show {
+  display: inline;
+}
+
+.hide {
+  display: none;
+}
+
+
+body {
+  min-height: 100vh;
+  background: var(--primary-color);
+  color: var(--primary-color);
+}
+
+header {
+  background: var(--s);
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 12%;
+  transition: all .50s ease;
+  box-shadow: 0 6px 12px -7px var(--primary-color);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo .fit {
+  color: var(--border-color);
+}
+
+.logo span {
+  color: var(--primary-color);
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.navbar button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+  margin: 0 2rem;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 16px 70px -8px rgb(248, 247, 247);
+
+}
+
+.navbar .sun {
+  color: #c99c33e9;
+  font-size: 22px;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar ul {
+  list-style-type: none;
+}
+
+.navbar a {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0px 30px;
+  transition: all .50s ease;
+  font-family: inherit;
+}
+
+.navbar a:hover {
+  color: var(--main-color)
+}
+
+.navbar a.active {
+  color: var(--border-color)
+}
+
+.main {
+  display: flex;
+  align-items: center;
+
+}
+
+.main a {
+  margin-right: 25px;
+  margin-left: 10px;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all .50s ease;
+  font-family: inherit;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  color: var(--primary-color);
+  font-size: 28px;
+  margin-right: 7px;
+  font-family: inherit;
+}
+
+#cart-icon {
+  display: flex;
+  align-items: center;
+  color: var(--primary-color);
+  font-size: 28px;
+  margin-right: 7px;
+}
+
+#user i {
+  color: var(--primary-color);
+  font-size: 25px;
+  margin-right: 7px;
+}
+
+#user-login {
+  display: flex;
+  align-items: center;
+  color: var(--primary-color);
+  font-size: 28px;
+  margin-right: 7px;
+  font-family: inherit;
+}
+
+#cart-icon i {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  margin-right: 7px;
+}
+
+.main a:hover {
+  color: var(--primary-color);
+}
+
+#menu-icon {
+  background: var(--primary-color);
+  font-size: 35px;
+  color: var(--secondary-color);
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+
+@media(max-width:1280px) {
+  hrader {
+    padding: 14px 2%;
+    transition: .25;
+  }
+
+  .navbar a {
+    padding: 5px 0;
+    margin: 0px 20px;
+  }
+}
+
+@media(max-width:1090px) {
+  #menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: -1%;
+    width: 270px;
+    height: 29vh;
+    background: var(#03cca2);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px;
+    transition: all .50s ease;
+  }
+
+  .navbar a {
+    display: block;
+    margin: 12px 0;
+    transition: all .50s ease;
+  }
+
+  .navbar a:hover {
+    color: var(--secondary-color);
+    transform: translateY(5px);
+  }
+}
+#nav {
+  display: flex;
+}
+
+@media screen and (max-width:1090px) {
+  /* CSS for screens smaller than 768px */
+  #nav {
+      display: none; /* Hide the nav by default on smaller screens */
+  }
+
+  #nav.open {
+      display: flex; /* Display the nav when the menu is opened */
+  }
+}

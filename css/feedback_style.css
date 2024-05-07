@@ -1,0 +1,228 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900,300);
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* ok */
+:root {
+    --main-color: #03cca2;
+    --border-color: #01aba2;
+    --primary-color: #fff;
+    --secondary-color: #000;
+}
+
+.dark-mode {
+    --primary-color: #000;
+    --secondary-color: #fff;
+}
+
+.show {
+    display: inline;
+}
+
+.hide {
+    display: none;
+}
+
+.body {
+    background: var(--secondary-color);
+    margin-top: -40px;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-container {
+    margin-bottom: 60px;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.slide-content {
+    padding: 45px 20px;
+    margin: 0 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    border-radius: 25px;
+
+}
+
+.card {
+    max-width: 330px;
+    border-radius: 25px;
+    background-color: var(--secondary-color);
+    box-shadow: var(--primary-color) 15px 20px 25px;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-content,
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--secondary-color);
+    padding: 10px 14px;
+    border-radius: 40px;
+
+}
+
+.image-content {
+    row-gap: 5px;
+    position: relative;
+    padding: 25px 0;
+
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--border-color);
+    border-radius: 25px 25px 0 25px;
+
+}
+
+.overlay::before,
+.overlay:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 40px;
+    bottom: -40px;
+    height: 40px;
+    background-color: var(--border-color);
+}
+
+.overlay:after {
+    border-radius: 0 25px 0 0;
+    background: var(--secondary-color);
+}
+
+.card-image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: var(--secondary-color);
+    padding: 3px;
+}
+
+.card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--border-color);
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.description {
+    font-size: 14px;
+    text-align: center;
+    color: var(--primary-color);
+
+}
+
+.button {
+    border: none;
+    font-size: 16px;
+    color: var(--secondary-color);
+    padding: 8px 16px;
+    background-color: var(--border-color);
+    border-radius: 25px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: var(--primary-color-color);
+    color: var(--border-color);
+}
+
+.slider .container .slide_swap {
+    width: calc(100% - 350px);
+    overflow: hidden;
+    position: relative;
+
+}
+
+.slider .container .slide_swap img {
+    width: 100%;
+    height: 100%;
+
+}
+
+/* .slider .container .slide_swap .swiper-pagination span{
+    
+} */
+.swiper-pagination-bullet-active {
+    background: var(--main-color) !important;
+    width: 35px !important;
+    height: 8px !important;
+    border-radius: 30px !important;
+}
+
+.swiper-navBtn {
+    color: var(--main-color);
+    transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover {
+    color: var(--main-color);
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+    font-size: 40px;
+}
+
+.swiper-button-next {
+    right: 0;
+
+}
+
+.swiper-button-prev {
+    left: 0;
+
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--border-color);
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--main-color);
+
+}
+
+@media screen and(max-width:768px) {
+    .swiper-navBtn {
+        display: none;
+    }
+
+    .slide-content {
+        margin: 0 10px;
+    }
+}

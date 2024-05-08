@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/chat.css">
   <link rel="stylesheet" href="css/navstyle.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="css/footer.css">
@@ -20,6 +21,7 @@
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/shop.css">
+  <script src="js/chat.js" defer></script>
    <script src="js/sport.js" defer></script> 
   <script src="js/darkmode.js" defer></script>
     <script src="js/main.js" defer></script>
@@ -101,6 +103,27 @@
       <div class="nav-btn "></div>
     </div>
   </section>
+
+  <button class="chatbot-toggler">
+    <span class="material-symbols-rounded"><i class="fa-regular fa-square"></i></span>
+    <span class="material-symbols-outlined"><i class="fa-solid fa-xmark"></i></span>
+  </button>
+  <div class="chatbot">
+    <header>
+      <h2>Chatbot</h2>
+      <span class="close-btn material-symbols-outlined">close</span>
+    </header>
+    <ul class="chatbox">
+      <li class="chat incoming">
+        <span class="material-symbols-outlined">smart_toy</span>
+        <p>Hi there 👋<br>How can I help you today?</p>
+      </li>
+    </ul>
+    <div class="chat-input">
+      <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+      <span id="send-btn" class="material-symbols-rounded">send</span>
+    </div>
+  </div>
 
 
 <div class="adver">

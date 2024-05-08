@@ -62,12 +62,13 @@
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
+    overflow: hidden;
     padding: 20px;
     background-color: var(--primary-color);
     box-shadow: 0 0 20px 10px var(--contant-color);
     border: 1px solid #051223;
     transition: 1.5s;
-    z-index: 100;
+    z-index: 11111;
 }
 
 .logo-area .sun {

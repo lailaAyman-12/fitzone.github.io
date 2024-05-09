@@ -64,7 +64,7 @@ function handle_addCartItem() {
   let price = product.querySelector(".product-price").innerHTML;
   let imgSrc = product.querySelector(".product-img").src;
   console.log(title, price, imgSrc);
-  alert("your product has been added succsefully..open the cart to check")
+  alert("your product has been added succsefully..open the cart to check");
 
   let newToAdd = {
     title,

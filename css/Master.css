@@ -6,6 +6,16 @@
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
+
+:root{
+    --primary-color:#fff;
+    --secondary-color:#000;
+}
+.dark-mode {
+    --primary-color: #000;
+    --secondary-color: #fff;
+}
+
 body{
     line-height: 1.5;
     background-color: #ecf2f5;
@@ -35,6 +45,8 @@ img{
     width: 75px;                                                    
     height: 340px;
     padding-right: 10%;
+    background-color:#90ddd9b2;
+    border-radius: 20%;
 }
 .img-select{
     display: flex;
@@ -92,7 +104,7 @@ img{
     text-transform: capitalize;
     font-weight: 700;
     position: relative;
-    color: #12263a;
+    color: var(--primary-color);
     margin: 1rem 0;
     font-size: 200%;
 }
@@ -103,7 +115,7 @@ img{
     bottom: 0;
     height: 4px;
     width: 80px;
-    background: #051223;
+    background: var(--primary-color);
 }
 .product-link{
     text-decoration: none;
@@ -113,7 +125,7 @@ img{
     display: inline-block;
     margin-bottom: 0.5rem;
     background: #03cca2;
-    color: #fff;
+    color: var(--primary-color);
     padding: 0 0.3rem;
     transition: all 0.5s ease;
 }
@@ -125,27 +137,28 @@ img{
 }
 .product-rating span{
     font-weight: 600;
-    color: #252525;
+    color: var(--primary-color);
 }
 .product-price{
     margin: 1rem 0;
     font-size: 1rem;
     font-weight: 700;
+    color: var(--primary-color);
 }
 .product-price span{
     font-weight: 400;
 }
 .last-price span{
-    color: #b3b5bc;
+    color:var(--primary-color);
     text-decoration: line-through;
 }
 .new-price span{
-    color: black;
+    color:var(--primary-color);
     font-weight: 600;
 }
 .product-detail h2{
     text-transform: capitalize;
-    color: #12263a;
+    color: var(--primary-color);
     padding-bottom: 0.6rem;
 }
 .product-detail p{
@@ -172,20 +185,20 @@ img{
 .purchase-info input{
     width: 60px;
     border-style: solid;
-    border-color: #d0d3dc;
+    border-color:#ecf2f5;
     border-width: 2px;
 }
 .purchase-info .btn{
     cursor: pointer;
-    color: #fff;
+    color:var(--primary-color);
     
 }
 .purchase-info .btn:first-of-type{
-    background: #051223;
+    background: var(--secondary-color);
 }
 .links{
     text-decoration: none;
-    color: white;
+    color: var(--primary-color);
 }
 
 .purchase-info .btn:first-of-type:hover{      /*  */
@@ -193,14 +206,14 @@ img{
 }
 .purchase-info .btn:last-of-type{                         /* ADD TO FAVORITE */
     padding: 2% 2% 1% 2% ;
-    color: #bbbdc6; 
+    color: var(--primary-color); 
     border-style: solid;
     border-color: #03cca2;
     border-width: 2px;
 }
 
  .purchase-info .btn:last-of-type:hover{      /*  */
-    color:#a6a8b0;
+    color:var(--secondary-color);
 } 
 
 .purchase-info .btn:hover{
@@ -216,8 +229,8 @@ img{
     justify-content: center;
     width: 32px;
     height: 32px;
-    color: #000;
-    border: 1px solid #000;
+    color:var(--primary-color);
+    border: 1px solid var(--primary-color);
     margin: 0 0.2rem;
     border-radius: 50%;
     text-decoration: none;

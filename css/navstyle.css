@@ -140,7 +140,8 @@ header {
   display: flex;
   align-items: center;
   color: var(--primary-color);
-  font-size: 28px;
+  font-size: 1.1rem;
+  font-weight: 500;
   margin-right: 7px;
 }
 

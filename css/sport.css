@@ -45,6 +45,14 @@ body {
   background: var(--secondary-color);
   color: var(--primary-color);
 }
+#cart-icon {
+  display: flex;
+  align-items: center;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-right: 7px;
+}
 
 header {
   background: var(--secondary-color);

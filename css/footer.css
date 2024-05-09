@@ -177,5 +177,20 @@ hr {
     .service-header {
         margin-bottom: 8px;
     }
+    .content-footer{
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    .service-area{
+        margin-left: 0;
+        margin-right: 30px;
+    }
+    .social-media{
+        margin-bottom: 1rem;
+    }
+    .footer-bottom{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
 }

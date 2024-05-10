@@ -91,7 +91,7 @@ body {
 
 }
 
-.container button {
+.container button{
     background-color: var(--border-color);
     color: var(--secondary-color);
     font-size: 12px;

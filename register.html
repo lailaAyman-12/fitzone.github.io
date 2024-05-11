@@ -81,66 +81,7 @@
                 </div>
             </div>
             
-    <!-- 
-    <?php
-require_once "connect.php";
-
-if (isset($_POST['register'])) {
-
-
-    $password = $_POST['password'];
-    $cpassword = $_POST['cpassword'];
-    if ($password === $cpassword) {
-        $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-        $sql = "INSERT INTO users (name, email, password) 
-        VALUES ('" . $_POST['name'] . "', '" . $_POST['email'] . "', '" . $hashed_password . "')";
-        if (mysqli_query($conn, $sql)) {
-
-            echo "New records created successfully";
-
-        } else {
-            echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-        }
-
-    } else {
-        echo "Password and confirm password do not match!";
-    }
-}
-
-
-
-<--
-    <footer>
-        <div class="footer-bottom2">
-            <span><a> FITZONE ©2024 - All Rights Reserved</a></span>
-            <span><a> </span>
-            <span><a> <a href=" https://www.linkedin.com/in/shahd-elghomary-305201252/"><i
-                            class='bx bxl-linkedin-square'></i></a>
-                    <a href="https://www.facebook.com/"><i class='bx bxl-facebook-square'></i></a>
-                    <a href="https://www.instagram.com/"><i class='bx bxl-instagram-alt'></i></a>
-                    <a href="https://twitter.com/"><i class='fab fa-x-twitter'></i></a></span>
-            <span><a> </span>
-            <span><a>
-                    <li><a href="privacy.html">privacy policy</a></li>
-                </a></span>
-
-        </div>
-        <style>
-            .footer-bottom2 {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                font-size: 0.875rem;
-                padding: 20px;
-                margin: auto;
-            }
-
-            .footer-bottom2 a {
-                color: var(--primary-color);
-            }
-        </style>
-
-    </footer> -->
+    
     <script src="js/navscript.js"></script>
 </body>
 

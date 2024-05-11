@@ -78,7 +78,7 @@
                 <h1 class="ad-h1">pretty</h1>
                 <h2 class="ad-h2">Elevate your performance with our pretty sports gear, where style meets strength on the field</h2>
                 <br>
-                <a href="shop.html" class="ad-btn">Shop Now</a>
+                <a href="#2" class="ad-btn">Shop Now</a>
               </div>
           </div>
       </div>
@@ -90,7 +90,7 @@
               <h1 class="ad-h1">Sale 50%</h1>
               <h2 class="ad-h2">All Sports Products! Hurry, Limited Time Offer. Dive into our website now and gear up for your next adventure! Don't miss out on this unbeatable deal!</h2>
               <br>
-              <a href="shop.html" class="ad-btn">Shop Now</a>
+              <a href="#2" class="ad-btn">Shop Now</a>
             </div>
         </div>
       </div>
@@ -104,7 +104,7 @@
                 Dive into our website now and get ready for your summer adventures! Don't miss out on this unbeatable deal!
               </h2>
               <br>
-              <a href="shop.html" class="ad-btn">Shop Now</a>
+              <a href="#2" class="ad-btn">Shop Now</a>
             </div>
         </div>
       </div>
@@ -314,31 +314,7 @@
         </div>
 
     </footer>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const cartIcon = document.getElementById("cart-icon");
-            const cart = document.querySelector(".cart");
-            const cartClose = document.getElementById("cart-close");
-    
-            // Toggle cart visibility when clicking cart icon
-            cartIcon.addEventListener("click", function(event) {
-                event.preventDefault(); // Prevent the default behavior of the anchor tag
-                cart.classList.toggle("show");
-            });
-    
-            // Close cart when clicking on close icon
-            cartClose.addEventListener("click", function() {
-                cart.classList.remove("show");
-            });
-    
-            // Close cart when clicking outside of it
-            window.addEventListener("click", function(event) {
-                if (!event.target.matches("#cart-icon") && !event.target.closest(".cart")) {
-                    cart.classList.remove("show");
-                }
-            });
-        });
-    </script>
+  
 </body>
 
 </html>

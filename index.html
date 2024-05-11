@@ -137,7 +137,7 @@
             <h1 class="ad-h1">men's shoes</h1>
             <h2 class="ad-h2"> All Men's Shoes! Dive into our website now and elevate your footwear game for the season ahead! Don't miss out on this unbeatable deal!</h2>
             <br>
-            <a href="shop.html" class="ad-btn">Shop Now</a>
+            <a href="#2" class="ad-btn">Shop Now</a>
           </div>
       </div>
   </div>
@@ -149,7 +149,7 @@
           <h1 class="ad-h1">Sale 50%</h1>
           <h2 class="ad-h2">All Sports Products! Hurry, Limited Time Offer. Dive into our website now and gear up for your next adventure! Don't miss out on this unbeatable deal!</h2>
           <br>
-          <a href="shop.html" class="ad-btn">Shop Now</a>
+          <a href="#2" class="ad-btn">Shop Now</a>
         </div>
     </div>
   </div>
@@ -161,7 +161,7 @@
           <h1 class="ad-h1">summer sale </h1>
           <h2 class="ad-h2">Dive into our website now and get ready for your summer adventures! Don't miss out on this unbeatable deal!</h2>
           <br>
-          <a href="shop.html" class="ad-btn">Shop Now</a>
+          <a href="#2" class="ad-btn">Shop Now</a>
         </div>
     </div>
   </div>
@@ -169,32 +169,6 @@
 
 
   <main>
-
-
-    <!-- the products and the icon -->
-    <div class="products_body">
-      <div class="cart">
-        <h2 class="cart-title">Your Cart</h2>
-
-        <div class="cart-content">
-
-
-        </div>
-
-        <!-- TOTAL   -->
-        <div class="total">
-          <div class="total-title">Total</div>
-          <div class="total-price">$0</div>
-        </div>
-        <!-- BUY BUTTON  -->
-        <button type="button" class="btn-buy">Buy Now</button>
-        <!-- CART CLOSE  -->
-        <i class='bx bx-x' id="cart-close"></i>
-      </div>
-    </div>
-
-
-
     <!-- SHOP SECTION  -->
     <section class="shop container" id="2">
       <h1 class="section-title" >Shop sales</h1>
@@ -483,29 +457,5 @@
 </body>
 <script src="js/swiper-bundle.min.js" ></script>
  <script src="js/main.js" ></script>
- <script>
-  document.addEventListener("DOMContentLoaded", function() {
-      const cartIcon = document.getElementById("cart-icon");
-      const cart = document.querySelector(".cart");
-      const cartClose = document.getElementById("cart-close");
-
-      // Toggle cart visibility when clicking cart icon
-      cartIcon.addEventListener("click", function(event) {
-          event.preventDefault(); // Prevent the default behavior of the anchor tag
-          cart.classList.toggle("show");
-      });
-
-      // Close cart when clicking on close icon
-      cartClose.addEventListener("click", function() {
-          cart.classList.remove("show");
-      });
-
-      // Close cart when clicking outside of it
-      window.addEventListener("click", function(event) {
-          if (!event.target.matches("#cart-icon") && !event.target.closest(".cart")) {
-              cart.classList.remove("show");
-          }
-      });
-  });
-</script>
+ 
 </html>

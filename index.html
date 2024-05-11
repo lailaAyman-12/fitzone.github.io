@@ -443,4 +443,29 @@
 
 </body>
 <script src="js/swiper-bundle.min.js" ></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      const cartIcon = document.getElementById("cart-icon");
+      const cart = document.querySelector(".cart");
+      const cartClose = document.getElementById("cart-close");
+
+      // Toggle cart visibility when clicking cart icon
+      cartIcon.addEventListener("click", function(event) {
+          event.preventDefault(); // Prevent the default behavior of the anchor tag
+          cart.classList.toggle("show");
+      });
+
+      // Close cart when clicking on close icon
+      cartClose.addEventListener("click", function() {
+          cart.classList.remove("show");
+      });
+
+      // Close cart when clicking outside of it
+      window.addEventListener("click", function(event) {
+          if (!event.target.matches("#cart-icon") && !event.target.closest(".cart")) {
+              cart.classList.remove("show");
+          }
+      });
+  });
+    </script>
 </html>

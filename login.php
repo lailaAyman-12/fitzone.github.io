@@ -70,10 +70,11 @@
                  <i class="fab fa-facebook"></i>
              </div>
  
-             <button>log in</button>
+             <span id="message"></span>
+                <button  name="login" value="login">log in</button>
                  
              <div class="login">
-                 <p>I don't have an account<a href="register.html">sign up now</a></p>
+                 <p>I don't have an account<a href="register.php">sign up now</a></p>
              </div>
  
          </form>
@@ -84,34 +85,39 @@
          </div>
      </div>
  
-    <!-- 
-            <?php
-
-            require_once "connect.php";
-
+    
+</body>
+<script>
+    <?php
+           require_once "connect.php";
             if (isset($_POST['login'])) {
-
-            $email = $_POST['email'];
-            $password = $_POST['password'];
-
-            $sql = "SELECT email, password FROM users WHERE email = '$email'";
-            $result = mysqli_query($conn, $sql);
-
-            if (mysqli_num_rows($result) > 0) {
-                while($row = mysqli_fetch_assoc($result)) {
-                    $hashed_password = $row['password'];
-                    if (password_verify($password, $hashed_password)) {
-                        //  echo "logined ";
-                    } else {
-                        //  echo "Password is incorrect!";
+                $email = $_POST['email'];
+                $password = $_POST['password'];
+                $sql = "SELECT email, password FROM users WHERE email = '$email'";
+                $result = mysqli_query($conn, $sql);
+                if (mysqli_num_rows($result) > 0) {
+                    while ($row = mysqli_fetch_assoc($result)) {
+                        $hashed_password = $row['password'];
+                        if (password_verify($password, $hashed_password)) {
+                            header("Location: index.html");
+                  exit();
+                        } else {
+                            echo "showMessage('Password is incorrect!', 'red');";
+                        }
                     }
+                } else {
+    
+                    echo "showMessage('Email not found!', 'red');";
                 }
-            } else {
-                // echo "Email not found!";
             }
-            }
+        ?>
 
-            -->
+    function showMessage(message, color) {
+        var messageElement = document.getElementById('message');
+        messageElement.textContent = message;
+        messageElement.style.color = color;
+    }
+    </script>
 </body>
 
 </html>

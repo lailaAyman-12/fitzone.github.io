@@ -68,10 +68,11 @@
                         <i class="fab fa-facebook"></i>
                     </div>
     
-                    <button>Sign up</button>
+                    <span id="message"></span>
+            <button value="register" name="register">Sign up</button>
     
                     <div class="login">
-                        <p>already have an account? <a href="login.html">login now</a></p>
+                        <p>already have an account? <a href="login.php">login now</a></p>
                     </div>
     
                 </form>
@@ -84,5 +85,33 @@
     
     <script src="js/navscript.js"></script>
 </body>
+<script>
+    <?php
+    require_once "connect.php";
+    if (isset($_POST['register'])) {
+    $password = $_POST['password'];
+    $cpassword = $_POST['cpassword'];
+    if ($password === $cpassword) {
+        $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+        $sql = "INSERT INTO users (name, email, password) 
+        VALUES ('" . $_POST['name'] . "', '" . $_POST['email'] . "', '" . $hashed_password . "')";
+        if (mysqli_query($conn, $sql)) {
+            header("Location: index.html");
+                exit();
+    exit;
+    } else {
+    echo "showMessage(Error: )" . $sql . "<br>" . mysqli_error($conn);
+    }
+    } else {
+    echo "showMessage('Password and confirm password do not match!','red');";
+    }
+    }
+    ?>
 
+    function showMessage(message, color) {
+        var messageElement = document.getElementById('message');
+        messageElement.textContent = message;
+        messageElement.style.color = color;
+    }
+    </script>
 </html>

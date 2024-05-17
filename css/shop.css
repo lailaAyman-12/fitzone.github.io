@@ -195,6 +195,12 @@ img {
     margin-top: 2rem;
 }
 
+
+.section-title{
+    align-items: center;
+    margin-bottom:50px ;
+    margin-left: 500px;
+}
 .shop-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, auto));
